@@ -1,0 +1,25 @@
+test_express_always_charges_1200_cents (test_express.ExpressFulfillmentTests.test_express_always_charges_1200_cents) ... ok
+test_express_fee_is_not_discounted (test_express.ExpressFulfillmentTests.test_express_fee_is_not_discounted) ... ok
+test_express_order_persists (test_express.ExpressFulfillmentTests.test_express_order_persists) ... ok
+test_express_quote_matches_order (test_express.ExpressFulfillmentTests.test_express_quote_matches_order) ... ok
+test_cancelling_twice_does_not_restore_stock_twice (test_known_defects.KnownDefectTests.test_cancelling_twice_does_not_restore_stock_twice) ... ok
+test_student_discount_at_exactly_50_dollars (test_known_defects.KnownDefectTests.test_student_discount_at_exactly_50_dollars) ... ok
+test_cancel_order_restores_stock (test_smoke.OrderSmokeTests.test_cancel_order_restores_stock) ... ok
+test_order_can_be_reopened (test_smoke.OrderSmokeTests.test_order_can_be_reopened) ... ok
+test_regular_pickup_quote (test_smoke.OrderSmokeTests.test_regular_pickup_quote) ... ok
+test_student_delivery_quote (test_smoke.OrderSmokeTests.test_student_delivery_quote) ... ok
+test_boolean_quantity_rejected (test_validation.ValidationTests.test_boolean_quantity_rejected) ... ok
+test_empty_items (test_validation.ValidationTests.test_empty_items) ... ok
+test_free_delivery_threshold (test_validation.ValidationTests.test_free_delivery_threshold) ... ok
+test_insufficient_stock (test_validation.ValidationTests.test_insufficient_stock) ... ok
+test_invalid_customer_type (test_validation.ValidationTests.test_invalid_customer_type) ... ok
+test_order_ids_increase (test_validation.ValidationTests.test_order_ids_increase) ... ok
+test_quote_does_not_change_stock (test_validation.ValidationTests.test_quote_does_not_change_stock) ... ok
+test_quote_matches_placed_order (test_validation.ValidationTests.test_quote_matches_placed_order) ... ok
+test_unknown_product (test_validation.ValidationTests.test_unknown_product) ... ok
+test_zero_quantity (test_validation.ValidationTests.test_zero_quantity) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.062s
+
+OK

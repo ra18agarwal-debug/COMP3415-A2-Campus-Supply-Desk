@@ -1,4 +1,4 @@
-# Campus Supply Desk
+﻿# Campus Supply Desk
 
 This program is intentionally imperfect. Your assignment is to understand, test, and improve it—not to rewrite it.
 
@@ -98,7 +98,7 @@ python -m unittest discover -s tests -v
 The supplied tests should finish with:
 
 ```text
-Ran 4 tests
+Ran 20 tests
 
 OK
 ```
@@ -214,3 +214,25 @@ These commands use the same orders and stock as the interactive menu opened with
 python -m supplydesk --help
 python -m supplydesk quote --help
 ```
+## 7. CR-01: Express fulfillment
+
+The application now supports three fulfillment options:
+
+- Pickup: No fulfillment fee.
+- Delivery: A standard fee of CAD 6.00 applies unless the discounted merchandise total qualifies for free delivery.
+- Express: A fixed CAD 12.00 fee always applies, even when standard delivery would be free.
+
+Student customers receive a 10% merchandise discount when the subtotal reaches CAD 50.00. The discount does not apply to fulfillment fees.
+
+Express fulfillment is supported in both the interactive menu and command-line interface.
+
+Example command:
+
+    python -m supplydesk quote --customer regular --fulfillment express --item notebook:1
+
+Expected result: CAD 5.00 merchandise + CAD 12.00 express fee = CAD 17.00 total.
+
+Quotes do not reserve stock. Placing an order reduces inventory and saves the fulfillment choice. Cancelling an order restores inventory only once.
+
+The expanded test suite contains 20 tests covering normal operations, validation, known defects, and express fulfillment.
+

@@ -59,7 +59,7 @@ class OrderService:
             })
 
         discount = 0
-        if customer_type == "student" and subtotal > STUDENT_DISCOUNT_THRESHOLD_CENTS:
+        if customer_type == "student" and subtotal >= STUDENT_DISCOUNT_THRESHOLD_CENTS:
             discount = (subtotal * STUDENT_DISCOUNT_PERCENT + DISCOUNT_ROUNDING_OFFSET) // PERCENT_DENOMINATOR
 
         delivery = 0

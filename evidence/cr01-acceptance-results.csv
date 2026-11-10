@@ -1,0 +1,5 @@
+"Customer","Fulfillment","Item","ExpectedCents","ActualCents","Result"
+"regular","express","notebook:2","2200","2200","PASS"
+"student","express","hoodie:2","8400","8400","PASS"
+"regular","delivery","hoodie:3","12000","12000","PASS"
+"regular","express","hoodie:3","13200","13200","PASS"
